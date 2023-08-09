@@ -2,10 +2,11 @@ import { Carousel } from "@mantine/carousel";
 import { Center, Image, Space, Text } from "@mantine/core";
 import Autoplay from "embla-carousel-autoplay";
 import { useRef } from "react";
-import Slider1 from "../../../../assets/images/image1.png";
-import Slider2 from "../../../../assets/images/image2.png";
-import Slider3 from "../../../../assets/images/image3.png";
-import Slider4 from "../../../../assets/images/image4.png";
+import Slider1 from "../assets/images/image1.png";
+import Slider2 from "../assets/images/image2.png";
+import Slider3 from "../assets/images/image3.png";
+import Slider4 from "../assets/images/image4.png";
+import React from 'react';
 
 const assets = [
   {

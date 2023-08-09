@@ -1,5 +1,6 @@
 import { Button } from "@mantine/core";
 import { GoogleIcon } from "./GoogleIcon";
+import React from 'react';
 
 export function GoogleButton(props) {
   return (

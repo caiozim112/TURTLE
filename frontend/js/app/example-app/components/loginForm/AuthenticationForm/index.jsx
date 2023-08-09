@@ -1,7 +1,8 @@
 import { useForm } from "@mantine/form";
-import { IconLock, IconMail } from "@tabler/icons";
+import { IconLock, IconMail } from "@tabler/icons-react";
 import { FacebookButton } from "./components/socialButtom/socialButtom/facebook/index";
 import { GoogleButton } from "./components/socialButtom/socialButtom/google/index";
+import React from 'react';
 
 import {
   ActionIcon,
