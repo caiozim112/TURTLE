@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     "webpack_loader",
     "import_export",
     "rest_framework",
+    "djoser",
     "common",
     "users",
 ]
@@ -82,7 +83,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "theprojectname.wsgi.application"
+WSGI_APPLICATION = "TURTLE.wsgi.application"
 
 AUTH_PASSWORD_VALIDATORS = [
     {

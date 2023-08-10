@@ -24,8 +24,40 @@ CELERY_TASK_EAGER_PROPAGATES = True
 
 # Email settings for mailhog
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
-EMAIL_HOST = "mailhog"
-EMAIL_PORT = 1025
+EMAIL_HOST = "smtp.gmail.com"
+EMAIL_USE_TLS=True
+EMAIL_PORT = 587
+EMAIL_HOST_USER="icedusk15@gmail.com"
+EMAIL_HOST_PASSWORD='saifora'
+DEFAULT_FROM_EMAIL = 'testmail@gmail.com'
+DJOSER = {
+    'LOGIN_FIELD':'email',
+    'USER_CREATE_PASSWORD_RETYPE':True,
+    'USERNAME_CHANGED_EMAIL_CONFIRMATION':True,
+    'PASSWORD_CHANGED_EMAIL_CONFIRMATION':True,
+    'SEND_CONFIRMATION_EMAIL':True,
+    'SET_USERNAME_RETYPE':True,
+    'SET_PASSWORD_RETYPE':True,
+    'PASSWORD_RESET_CONFIRM_URL':'password/reset/{uid}/{token}',
+    'USERNAME_RESET_CONFIRM_URL':'username/reset/{uid}/{token}',
+    'ACTIVATION_URL':'activate/{uid}/{token}',
+    'SEND_ACTIVATION_EMAIL':True,
+    'SERIALIZERS':{
+        'user_create':'users.serializers.UserCreateSerializer',
+        'user':'users.serializers.UserCreateSerializer',
+        'user_delete':'djoser.serializers.UserDeleteSerializer',
+    }
+}
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.TokenAuthentication',
+    ),
+}
+
+SIMPLE_JWT = {
+   'AUTH_HEADER_TYPES': ('JWT',),
+}
 
 # Logging
 LOGGING = {
