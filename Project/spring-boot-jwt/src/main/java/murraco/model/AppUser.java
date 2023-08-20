@@ -12,10 +12,13 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.persistence.UniqueConstraint;
 import javax.validation.constraints.Size;
 
 @Entity
-@Data // Create getters and setters
+@Table(name = "app_user")
+@Data
 @NoArgsConstructor
 public class AppUser {
 
