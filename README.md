@@ -6,7 +6,7 @@
 ## About
 A [Django](https://www.djangoproject.com/) project boilerplate/template with lots of state of the art libraries and tools like:
 - [React](https://facebook.github.io/react/), for building interactive UIs
-- [Poetry](https://python-poetry.org/), for managing the environment and its dependencies
+- [Poetry](https://python-poetry.org/), for managing the environment and its dependencies otherwise, is better than pip or conda.
 - [django-js-reverse](https://github.com/ierror/django-js-reverse), for generating URLs on JS
 - [React Bootstrap](https://react-bootstrap.github.io/), for responsive styling
 - [Webpack](https://webpack.js.org/), for bundling static assets
@@ -236,14 +236,3 @@ We believe Celery tasks should be idempotent. So for us it's safe to set `CELERY
 - `celery` for background worker tasks
 - `django-debreach` for additional protection against BREACH attack
 - `whitenoise` and `brotlipy` for serving static assets
-
-## Contributing
-
-If you wish to contribute to this project, please first discuss the change you wish to make via an [issue](https://github.com/vintasoftware/django-react-boilerplate/issues).
-
-Check our [contributing guide](https://github.com/vintasoftware/django-react-boilerplate/blob/master/CONTRIBUTING.md) to learn more about our development process and how you can test your changes to the boilerplate.
-
-## Commercial Support
-[![alt text](https://avatars2.githubusercontent.com/u/5529080?s=80&v=4 "Vinta Logo")](https://www.vinta.com.br/)
-
-This project is maintained by [Vinta Software](https://www.vinta.com.br/) and is used in products of Vinta's clients. We are always looking for exciting work, so if you need any commercial support, feel free to get in touch: contact@vinta.com.br
